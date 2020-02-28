@@ -1,0 +1,65 @@
+.button {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 6px 16px;
+  min-width: 64px;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--mediumText);
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: var(--backgroundTransition);
+}
+.button:hover {
+  background-color: var(--buttonBackground);
+}
+.button:active {
+  opacity: 0.85;
+}
+.button[disabled] {
+  background-color: var(--buttonBackground);
+  color: var(--lighterText);
+}
+.contained {
+  background-color: var(--primary);
+  color: #fff;
+  transition: var(--shadowTransition);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.contained:hover {
+  background-color: var(--primary);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.contained[disabled] {
+  color: var(--lighterText);
+  background: var(--buttonBackground);
+  box-shadow: none;
+  cursor: default;
+}
+.label {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+}
+.label > svg {
+  flex: 0 0 24px;
+  fill: currentColor;
+  margin-right: 3px;
+}
